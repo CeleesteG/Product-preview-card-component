@@ -1,0 +1,150 @@
+
+:root {
+    --main-bg-color: brown;
+   --monse:  'Montserrat', sans-serif;
+   --fraunces: 'Fraunces', serif;
+   --ceant: hsl(158, 36%, 37%);
+  }
+*{
+	margin: 0;
+	padding: 0;
+/*	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;*/
+}
+body {
+    margin:0;
+    padding:0;
+    background-color: hsl(26, 40%, 92%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.row {
+    background-color: hsl(0, 100%, 100%);
+    width: 70vh;
+    height: 50vh;
+    border-radius: 10px;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.column1, .column2{
+  width: 50%;
+  padding: 0px;
+}
+
+.column-container{
+    margin: 0 auto;
+    width: 79%;
+}
+.item-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.item{
+    font-family:var(--monse);
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 10px;
+    padding: 10px;
+}
+.title{
+    font-family:var(--fraunces);
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 10px;
+}
+.description{
+    font-family:var(--monse);
+    color: gray;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.resume{
+    margin-top: 0px;
+}
+.price
+{
+    font-family:var(--fraunces);
+    color: var(--ceant);
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+    display: inline;
+    
+
+}
+.price-descount{
+    font-family:var(--monse);
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration:line-through;
+    display: inline;
+
+}
+.button-cart{
+  background-color: var(--ceant);
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family:var(--monse);
+  font-size: 14px;
+  width: 200px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button-cart:hover {
+    background-color: hsl(156, 42%, 18%);
+  }
+
+  @media (max-width: 375px) {
+   .row {
+    background-color: hsl(0, 100%, 100%);
+    width: 90vw;
+    height: 70vh;
+    border-radius: 10px;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.column1{
+  width: 100%;
+  padding: 0px;
+  height: 40%;
+}
+.column2{
+    width: 100%;
+    padding: 0px;
+    height: 60%;
+  }
+.column-container{
+    margin: 0 auto;
+    width: 78%;
+    
+}
+.item, .title, .description{
+   
+    margin: 5px;
+    padding: 5px;
+}
+}
